@@ -1,6 +1,7 @@
 # Jeu du moulin
 
   Version : 1.1
+  
   Version IA : 1.0
 
   Pour cette version :
