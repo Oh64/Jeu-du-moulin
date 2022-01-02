@@ -14,7 +14,7 @@ et de ASMHOOK (https://tiplanet.org/forum/archives_voir.php?id=2643391)
 
 ![Jeudumoulingif](https://user-images.githubusercontent.com/93646709/147883023-9f078538-cacd-4c6b-b702-f4d432f8d9de.gif)
 
-### The game is not yet translated into English
+### The game is not yet translated into English but will be soon
 
   Version : 1.1
 
