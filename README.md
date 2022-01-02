@@ -1,5 +1,7 @@
 # [Jeu du moulin](https://tiplanet.org/forum/archives_voir.php?id=2833473)
 
+##The game is not yet translated into English
+
   Version : 1.1
 
   Version IA : 1.0
