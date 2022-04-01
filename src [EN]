@@ -1,0 +1,1105 @@
+:DCS
+"BBBBBBBBBBBBBBBBBBBBB3BBBBBBBBBBBBBB33BBBBBBBBBBBBB3C3BBBBBBBBBBBBB3C3333BBBBBBBBBB3C3CCC3BBBBBB33333333333BBBBBB3CCC3C3BBBBBBBBBB3333C3BBBBBBBBBBB773C3BBBBBBBBBBB77337BBBBBBBBBBB77377BBBBBBBBBBB77777BB55BBBBBBB77777555555BBB55555555777755B5577777777777755"
+Goto 0
+Lbl 0
+EffÉcran
+{1,2,3,4}
+prgmTEXTLIB
+Output(1,1,"              How to play ?"
+Output(2,1,"        (Press : - (or ?))"
+Output(5,7,"  Moulin game")
+Output(10,1,"Info Quit  Play  Del Setti"
+0→K
+While K≠13
+getKey→K
+If K=14
+Then
+Output(6,9,"Loading..."
+DelVar A:DelVar B:DelVar C:DelVar D:DelVar E:DelVar F:DelVar G:DelVar H:DelVar I:DelVar J:DelVar K:DelVar L:DelVar M:DelVar N:DelVar O:DelVar P:DelVar Q:DelVar R:DelVar S:DelVar T:DelVar U:DelVar V:DelVar W:DelVar X:DelVar Y:DelVar Z:DelVar θ:DelVar L₁:DelVar L₂:DelVar L₃:DelVar L₄:DelVar L₅:DelVar L₆:DelVar Chn1:DelVar Chn2:DelVar Chn3:DelVar Chn4:DelVar Chn5:DelVar Chn6:DelVar Chn7:DelVar Chn8:DelVar Chn9:DelVar Chn0
+Output(6,9,"Do !        "
+Wait 0.5
+Output(6,9,"           "
+End
+If K=11
+Then
+EffÉcran
+Output(1,1,"By Oh11115"
+Output(3,1,"Version game : 1.1"
+Output(4,1,"IA version : 1.0"
+Output(6,1,"                          (Game) Patch a bug                                                            (IA) Intelligent IA Test")
+While 1
+getKey→K
+If K=45
+Then
+0→K
+Goto 0
+End
+End
+End
+If K=15
+Then
+Goto 1
+Lbl 1
+If V=0:2→V
+If θ=0:1→θ
+EffÉcran
+If V=2
+Then
+{3}
+prgmTEXTLIB
+Output(3,1,"Stupid")
+{13}
+prgmTEXTLIB
+Output(3,8,"Intelligent (beta)")
+{3}
+prgmTEXTLIB
+End
+If V=1
+Then
+{3}
+prgmTEXTLIB
+Output(3,8,"Intelligent (beta)")
+{13}
+prgmTEXTLIB
+Output(3,1,"Stupid")
+{3}
+prgmTEXTLIB
+End
+{1,2,3,4}
+prgmTEXTLIB
+Output(1,1,"Intelligence of the IA :")
+If V=1:Output(9,1,"The IA does not think and will be very easy to beat"
+If V=2:Output(7,1,"The IA will thinking.     She will understand your  action and she will make  the best shot to win"
+While K≠45
+getKey→K
+If θ=1
+Then
+Output(4,15," "
+Output(4,3,"^"
+End
+If θ=2
+Then
+Output(4,3," "
+Output(4,15,"^"
+End
+If K=105 ou K=21
+Then
+θ→V
+Goto 1
+End
+If θ≠2 et K=26:2→θ
+If θ≠1 et K=24:1→θ
+End
+0→K
+Goto 0
+End
+If K=12
+Then
+EffÉcran
+Stop
+End
+If K=104
+Then
+EffÉcran
+Output(1,1,"For this version :        In this game you have to  place your token (blue)   on the facon tray to      align 3 in horizontal or  vertical or oblique but   be careful your opponent  wants to win so block she!"
+While K≠45
+getKey→K
+End
+Goto 0
+End
+End
+EffÉcran
+If V=0:2→V
+1→P
+1→H
+
+"Ne pas toucher sinon jeu imposible
+8→θ
+
+"*"→Chn0
+DelVar L₁:DelVar L₂:DelVar L₃
+{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}→L₁
+{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}→L₂
+{0,0,0,θ,θ,0,0,0,0,0,0,0,0,0,0,0,0}→L₃
+Output(1,1,"Intelligence of the IA :     "
+If V=1:Output(2,1,"Stupid"
+If V=2:Output(2,1,"intelligent"
+Wait 2
+EffÉcran
+Goto 2
+Lbl 2
+While K≠45
+{1,2,3,4,14,17,BLANC}
+prgmTEXTLIB
+Output(2,4,"---")
+Output(2,2," ")
+Output(2,8,"---")
+Output(3,3,"I")
+Output(3,4," ")
+Output(3,6,"-")
+Output(3,8,"-")
+Output(7,4," ")
+Output(3,11,"I")
+Output(5,4,"-")
+Output(5,10,"-")
+Output(5,8," ")
+Output(4,3,"I")
+Output(5,2," ")
+Output(4,5,"I")
+Output(4,9,"I")
+Output(4,11,"I")
+Output(8,2," ")
+Output(6,3,"I")
+Output(6,5,"I")
+Output(6,9,"I")
+Output(6,11,"I")
+Output(7,3,"I"
+Output(7,6,"-"
+Output(7,8,"-"
+Output(7,11,"I"
+Output(8,4,"---"
+Output(8,8,"---"
+L₃(1)→θ
+If H=1 et non(L₃(5)≤0):Output(5,16,"Your turn"
+If H=1 et L₃(5)≤0:Output(5,16,"Delete"
+If H=2:Output(5,19,"End"
+If H=2:Output(6,16,"{Enter}"
+{1,2,3,14,17,BLEU}
+prgmTEXTLIB
+If L₁(1)=1:Output(2,3,Chn0)
+If L₁(2)=1:Output(2,7,Chn0)
+If L₁(3)=1:Output(2,11,Chn0)
+If L₁(4)=1:Output(5,3,Chn0)
+If L₁(5)=1:Output(5,11,Chn0)
+If L₁(6)=1:Output(8,3,Chn0)
+If L₁(7)=1:Output(8,7,Chn0)
+If L₁(8)=1:Output(8,11,Chn0)
+If L₁(9)=1:Output(3,5,Chn0)
+If L₁(10)=1:Output(3,7,Chn0)
+If L₁(11)=1:Output(3,9,Chn0)
+If L₁(12)=1:Output(5,5,Chn0)
+If L₁(13)=1:Output(5,9,Chn0)
+If L₁(14)=1:Output(7,5,Chn0)
+If L₁(15)=1:Output(7,7,Chn0)
+If L₁(16)=1:Output(7,9,Chn0)
+
+{1,2,3,14,17,ROUGE}
+prgmTEXTLIB
+If L₂(1)=1:Output(2,3,Chn0)
+If L₂(2)=1:Output(2,7,Chn0)
+If L₂(3)=1:Output(2,11,Chn0)
+If L₂(4)=1:Output(5,3,Chn0)
+If L₂(5)=1:Output(5,11,Chn0)
+If L₂(6)=1:Output(8,3,Chn0)
+If L₂(7)=1:Output(8,7,Chn0)
+If L₂(8)=1:Output(8,11,Chn0)
+If L₂(9)=1:Output(3,5,Chn0)
+If L₂(10)=1:Output(3,7,Chn0)
+If L₂(11)=1:Output(3,9,Chn0)
+If L₂(12)=1:Output(5,5,Chn0)
+If L₂(13)=1:Output(5,9,Chn0)
+If L₂(14)=1:Output(7,5,Chn0)
+If L₂(15)=1:Output(7,7,Chn0)
+If L₂(16)=1:Output(7,9,Chn0)
+{1,2,3,4}
+prgmTEXTLIB
+getKey→K
+If K=72
+Then
+If P≥1 et P≤8
+Then
+9→P
+Goto 2
+End
+If P≥9 et P≤16
+Then
+1→P
+Goto 2
+End
+End
+If K=73
+Then
+If P≥1 et P≤8
+Then
+10→P
+Goto 2
+End
+If P≥9 et P≤16
+Then
+2→P
+Goto 2
+End
+End
+If K=74
+Then
+If P≥1 et P≤8
+Then
+11→P
+Goto 2
+End
+If P≥9 et P≤16
+Then
+3→P
+Goto 2
+End
+End
+If K=82
+Then
+If P≥1 et P≤8
+Then
+12→P
+Goto 2
+End
+If P≥9 et P≤16
+Then
+4→P
+Goto 2
+End
+End
+If K=84
+Then
+If P≥1 et P≤8
+Then
+13→P
+Goto 2
+End
+If P≥9 et P≤16
+Then
+5→P
+Goto 2
+End
+End
+If K=92
+Then
+If P≥1 et P≤8
+Then
+14→P
+Goto 2
+End
+If P≥9 et P≤16
+Then
+6→P
+Goto 2
+End
+End
+If K=93
+Then
+If P≥1 et P≤8
+Then
+15→P
+Goto 2
+End
+If P≥9 et P≤16
+Then
+7→P
+Goto 2
+End
+End
+If K=94
+Then
+If P≥1 et P≤8
+Then
+16→P
+Goto 2
+End
+If P≥9 et P≤16
+Then
+8→P
+Goto 2
+End
+End
+If K=26
+Then
+P+1→P
+End
+If K=24
+Then
+P-1→P
+End
+If K=105 et non(L₃(5)≤0)
+Then
+If H=1
+Then
+If L₁(P)=1:Goto 2
+If L₂(P)=1:Goto 2
+1→L₁(P)
+0→K
+Goto IA
+End
+If H=2
+Then
+Goto IA
+End
+End
+If H≠2 et L₃(5)≤0 et K=105
+Then
+If L₁(P)=0 ou L₂(P)=0:Goto 2
+If L₁(P)=1:Goto 2
+0→L₂(P)
+L₃(5)+1→L₃(5)
+Goto IA
+End
+If P≥17:1→P
+If P≤0:16→P
+If K=13:Goto 2
+{1,2,3,4,13}
+prgmTEXTLIB
+If P=1:Output(2,3,"*")
+If P=2:Output(2,7,"*")
+If P=3:Output(2,11,"*")
+If P=4:Output(5,3,"*")
+If P=5:Output(5,11,"*")
+If P=6:Output(8,3,"*")
+If P=7:Output(8,7,"*")
+If P=8:Output(8,11,"*")
+If P=9:Output(3,5,"*")
+If P=10:Output(3,7,"*")
+If P=11:Output(3,9,"*")
+If P=12:Output(5,5,"*")
+If P=13:Output(5,9,"*")
+If P=14:Output(7,5,"*")
+If P=15:Output(7,7,"*")
+If P=16:Output(7,9,"*")
+{1,2,3,4,14,17,BLANC}
+prgmTEXTLIB
+If P≠1 et L₁(1)≠1 et L₂(1)≠1:Output(2,3,"*")
+If P≠2 et L₁(2)≠1 et L₂(2)≠1:Output(2,7,"*")
+If P≠3 et L₁(3)≠1 et L₂(3)≠1:Output(2,11,"*")
+If P≠4 et L₁(4)≠1 et L₂(4)≠1:Output(5,3,"*")
+If P≠5 et L₁(5)≠1 et L₂(5)≠1:Output(5,11,"*")
+If P≠6 et L₁(6)≠1 et L₂(6)≠1:Output(8,3,"*")
+If P≠7 et L₁(7)≠1 et L₂(7)≠1:Output(8,7,"*")
+If P≠8 et L₁(8)≠1 et L₂(8)≠1:Output(8,11,"*")
+If P≠9 et L₁(9)≠1 et L₂(9)≠1:Output(3,5,"*")
+If P≠10 et L₁(10)≠1 et L₂(10)≠1:Output(3,7,"*")
+If P≠11 et L₁(11)≠1 et L₂(11)≠1:Output(3,9,"*")
+If P≠12 et L₁(12)≠1 et L₂(12)≠1:Output(5,5,"*")
+If P≠13 et L₁(13)≠1 et L₂(13)≠1:Output(5,9,"*")
+If P≠14 et L₁(14)≠1 et L₂(14)≠1:Output(7,5,"*")
+If P≠15 et L₁(15)≠1 et L₂(15)≠1:Output(7,7,"*")
+If P≠16 et L₁(16)≠1 et L₂(16)≠1:Output(7,9,"*")
+
+End
+
+Goto 0
+
+Lbl E
+EffÉcran
+0→H
+{1,2,3,4}
+prgmTEXTLIB
+Output(1,1,"Equality"
+Output(2,1,"It's possible ?"
+Output(3,1,"-{+ to see the ground}-"
+Output(4,1,"-{ANNUL for menu}-"
+While 1
+getKey→H
+If H=95
+Then
+EffÉcran
+0→K
+2→H
+Goto 2
+End
+If H=45
+Then
+EffÉcran
+0→K
+Goto 0
+End
+End
+Goto 0
+
+Lbl W
+EffÉcran
+0→H
+{1,2,3,4}
+prgmTEXTLIB
+Output(1,1,"You win"
+Output(2,1,"Well done"
+Output(3,1,"-{+ to see the ground}-"
+Output(4,1,"-{ANNUL for menu}-"
+While 1
+getKey→H
+If H=95
+Then
+EffÉcran
+0→K
+2→H
+Goto 2
+End
+If H=45
+Then
+EffÉcran
+0→K
+Goto 0
+End
+End
+Goto 0
+
+Lbl P
+EffÉcran
+0→H
+{1,2,3,4}
+prgmTEXTLIB
+Output(1,1,"You are lost"
+Output(2,1,"Pity"
+Output(3,1,"-{+ to see the ground}-"
+Output(4,1,"-{ANNUL for menu}-"
+While 1
+getKey→H
+If H=95
+Then
+EffÉcran
+0→K
+2→H
+Goto 2
+End
+If H=45
+Then
+EffÉcran
+0→K
+Goto 0
+End
+End
+Goto 0
+
+Lbl IB
+nbrAléatEnt(1,16)→I
+Goto IC
+
+Lbl ID
+nbrAléatEnt(1,16)→I
+If L₁(I)=0 ou L₂(I)=0:Goto ID
+If L₂(I)=1:Goto ID
+Goto I
+
+Lbl IA
+{1,2,3,4,14,17,BLANC}
+prgmTEXTLIB
+
+If H=1:Output(5,16,"            "
+If H=1:Output(5,14,"Reflected   "
+If H=2:Output(5,14,"           "
+If H=2:Output(6,14,"           "
+
+0→I
+0→L₃(16)
+
+If L₁(1)=1 et L₁(2)=1 et L₁(3)=1:1→L₃(16)
+If L₁(3)=1 et L₁(5)=1 et L₁(8)=1:1→L₃(16)
+If L₁(12)=1 et L₁(13)=1 et L₁(4)=1:1→L₃(16)
+If L₁(12)=1 et L₁(13)=1 et L₁(5)=1:1→L₃(16)
+If L₁(6)=1 et L₁(7)=1 et L₁(8)=1:1→L₃(16)
+If L₁(1)=1 et L₁(4)=1 et L₁(6)=1:1→L₃(16)
+If L₁(15)=1 et L₁(10)=1 et L₁(2)=1:1→L₃(16)
+If L₁(15)=1 et L₁(10)=1 et L₁(7)=1:1→L₃(16)
+If L₁(9)=1 et L₁(10)=1 et L₁(11)=1:1→L₃(16)
+If L₁(14)=1 et L₁(15)=1 et L₁(16)=1:1→L₃(16)
+If L₁(9)=1 et L₁(12)=1 et L₁(14)=1:1→L₃(16)
+If L₁(11)=1 et L₁(13)=1 et L₁(16)=1:1→L₃(16)
+If L₁(1)=1 et L₁(9)=1 et L₁(16)=1:1→L₃(16)
+If L₁(8)=1 et L₁(9)=1 et L₁(16)=1:1→L₃(16)
+If L₁(3)=1 et L₁(11)=1 et L₁(14)=1:1→L₃(16)
+If L₁(6)=1 et L₁(11)=1 et L₁(14)=1:1→L₃(16)
+
+If L₃(4)=0:Goto ID
+
+If H=1 et V=2 et L₃(16)≠1
+Then
+
+If L₂(1)=1 et L₂(2)=1
+Then
+3→I
+Else
+If L₂(1)=1 et L₂(3)=1
+Then
+2→I
+Else
+If L₂(2)=1 et L₂(3)=1
+Then
+1→I
+Else
+If L₂(4)=1 et L₂(12)=1
+Then
+13→I
+Else
+If L₂(5)=1 et L₂(13)=1
+Then
+12→I
+Else
+If L₂(12)=1 et L₂(13)=1
+Then
+If L₁(4)=1 ou L₂(4)=1
+Then
+5→I
+Else
+If L₁(5)=1 ou L₂(5)=1
+Then
+4→I
+Else
+nbrAléatEnt(4,5)→I
+End
+End
+Else
+If L₂(4)=1 et L₂(13)=1
+Then
+12→I
+Else
+If L₂(5)=1 et L₂(12)=1
+Then
+13→I
+Else
+If L₂(6)=1 et L₂(7)=1
+Then
+8→I
+Else
+If L₂(6)=1 et L₂(8)=1
+Then
+7→I
+Else
+If L₂(7)=1 et L₂(8)=1
+Then
+6→I
+Else
+If L₂(9)=1 et L₂(10)=1
+Then
+11→I
+Else
+If L₂(9)=1 et L₂(11)=1
+Then
+10→I
+Else
+If L₂(10)=1 et L₂(11)=1
+Then
+9→I
+Else
+If L₂(14)=1 et L₂(15)=1
+Then
+16→I
+Else
+If L₂(14)=1 et L₂(16)=1
+Then
+15→I
+Else
+If L₂(15)=1 et L₂(16)=1
+Then
+14→I
+Else
+If L₂(1)=1 et L₂(4)=1
+Then
+6→I
+Else
+If L₂(1)=1 et L₂(6)=1
+Then
+4→I
+Else
+If L₂(4)=1 et L₂(6)=1
+Then
+1→I
+Else
+If L₂(2)=1 et L₂(10)=1
+Then
+15→I
+Else
+If L₂(7)=1 et L₂(15)=1
+Then
+10→I
+Else
+If L₂(10)=1 et L₂(15)=1
+Then
+If L₂(2)=1 ou L₁(2)=1
+Then
+7→I
+Else
+If L₂(7)=1 ou L₁(7)=1
+Then
+2→I
+Else
+nbrAléatEnt(1,2)→L₃(3)
+If L₃(3)=1:2→I
+If L₃(3)=2:7→I
+End
+End
+Else
+If L₂(2)=1 et L₂(15)=1
+Then
+10→I
+Else
+If L₂(10)=1 et L₂(7)=1
+Then
+15→I
+Else
+If L₂(3)=1 et L₂(5)=1
+Then
+8→I
+Else
+If L₂(3)=1 et L₂(8)=1
+Then
+5→I
+Else
+If L₂(5)=1 et L₂(8)=1
+Then
+3→I
+Else
+If L₂(9)=1 et L₂(12)=1
+Then
+14→I
+Else
+If L₂(9)=1 et L₂(14)=1
+Then
+12→I
+Else
+If L₂(12)=1 et L₂(14)=1
+Then
+9→I
+Else
+If L₂(11)=1 et L₂(13)=1
+Then
+16→I
+Else
+If L₂(11)=1 et L₂(16)=1
+Then
+13→I
+Else
+If L₂(13)=1 et L₂(16)=1
+Then
+11→I
+Else
+If L₂(1)=1 et L₂(9)=1
+Then
+16→I
+Else
+If L₂(16)=1 et L₂(8)=1
+Then
+9→I
+Else
+If L₂(9)=1 et L₂(16)=1
+Then
+If L₂(1)=1 ou L₁(1)=1
+Then
+8→I
+Else
+If L₂(8)=1 ou L₁(8)=1
+Then
+1→I
+Else
+nbrAléatEnt(1,2)→L₃(3)
+If L₃(3)=1:8→I
+If L₃(3)=1:1→I
+End
+End
+Else
+If L₂(1)=1 et L₂(16)=1
+Then
+9→I
+Else
+If L₂(9)=1 et L₂(8)=1
+Then
+16→I
+Else
+If L₂(3)=1 et L₂(11)=1
+Then
+14→I
+Else
+If L₂(6)=1 et L₂(14)=1
+Then
+11→I
+Else
+If L₂(11)=1 et L₂(14)=1
+Then
+If L₂(3)=1 ou L₁(3)=1
+Then
+6→I
+Else
+If L₂(6)=1 ou L₁(6)=1
+Then
+3→I
+Else
+nbrAléatEnt(1,2)→L₃(3)
+If L₃(3)=1:6→I
+If L₃(3)=2:3→I
+End
+End
+Else
+If L₂(3)=1 et L₂(14)=1
+Then
+11→I
+Else
+If L₂(6)=1 et L₂(11)=1
+Then
+14→I
+Else
+If L₁(1)=1 et L₁(2)=1
+Then
+3→I
+Else
+If L₁(1)=1 et L₁(3)=1
+Then
+2→I
+Else
+If L₁(2)=1 et L₁(3)=1
+Then
+1→I
+Else
+If L₁(4)=1 et L₁(12)=1
+Then
+13→I
+Else
+If L₁(5)=1 et L₁(13)=1
+Then
+12→I
+Else
+If L₁(12)=1 et L₁(13)=1
+Then
+If L₁(4)=1 ou L₂(4)=1
+Then
+5→I
+Else
+If L₁(5)=1 ou L₂(5)=1
+Then
+4→I
+Else
+nbrAléatEnt(4,5)→I
+End
+End
+Else
+If L₁(4)=1 et L₁(13)=1
+Then
+12→I
+Else
+If L₁(5)=1 et L₁(12)=1
+Then
+13→I
+Else
+If L₁(6)=1 et L₁(7)=1
+Then
+8→I
+Else
+If L₁(6)=1 et L₁(8)=1
+Then
+7→I
+Else
+If L₁(7)=1 et L₁(8)=1
+Then
+6→I
+Else
+If L₁(9)=1 et L₁(10)=1
+Then
+11→I
+Else
+If L₁(9)=1 et L₁(11)=1
+Then
+10→I
+Else
+If L₁(10)=1 et L₁(11)=1
+Then
+9→I
+Else
+If L₁(14)=1 et L₁(15)=1
+Then
+16→I
+Else
+If L₁(14)=1 et L₁(16)=1
+Then
+15→I
+Else
+If L₁(15)=1 et L₁(16)=1
+Then
+14→I
+Else
+If L₁(1)=1 et L₁(4)=1
+Then
+6→I
+Else
+If L₁(1)=1 et L₁(6)=1
+Then
+4→I
+Else
+If L₁(4)=1 et L₁(6)=1
+Then
+1→I
+Else
+If L₁(2)=1 et L₁(10)=1
+Then
+15→I
+Else
+If L₁(7)=1 et L₁(15)=1
+Then
+10→I
+Else
+If L₁(10)=1 et L₁(15)=1
+Then
+If L₂(2)=1 ou L₁(2)=1
+Then
+7→I
+Else
+If L₂(7)=1 ou L₁(7)=1
+Then
+2→I
+Else
+nbrAléatEnt(1,2)→L₃(3)
+If L₃(3)=1:2→I
+If L₃(3)=2:7→I
+End
+End
+Else
+If L₁(2)=1 et L₁(15)=1
+Then
+10→I
+Else
+If L₁(10)=1 et L₁(7)=1
+Then
+15→I
+Else
+If L₁(3)=1 et L₁(5)=1
+Then
+8→I
+Else
+If L₁(3)=1 et L₁(8)=1
+Then
+5→I
+Else
+If L₁(5)=1 et L₁(8)=1
+Then
+3→I
+Else
+If L₁(9)=1 et L₁(12)=1
+Then
+14→I
+Else
+If L₁(9)=1 et L₁(14)=1
+Then
+12→I
+Else
+If L₁(12)=1 et L₁(14)=1
+Then
+9→I
+Else
+If L₁(11)=1 et L₁(13)=1
+Then
+16→I
+Else
+If L₁(11)=1 et L₁(16)=1
+Then
+13→I
+Else
+If L₁(13)=1 et L₁(16)=1
+Then
+11→I
+Else
+If L₁(1)=1 et L₁(9)=1
+Then
+16→I
+Else
+If L₁(16)=1 et L₁(8)=1
+Then
+9→I
+Else
+If L₁(9)=1 et L₁(16)=1
+Then
+If L₂(1)=1 ou L₁(1)=1
+Then
+8→I
+Else
+If L₂(8)=1 ou L₁(8)=1
+Then
+1→I
+Else
+nbrAléatEnt(1,2)→L₃(3)
+If L₃(3)=1:8→I
+If L₃(3)=1:1→I
+End
+End
+Else
+If L₁(1)=1 et L₁(16)=1
+Then
+9→I
+Else
+If L₁(9)=1 et L₁(8)=1
+Then
+16→I
+Else
+If L₁(3)=1 et L₁(11)=1
+Then
+14→I
+Else
+If L₁(6)=1 et L₁(14)=1
+Then
+11→I
+Else
+If L₁(11)=1 et L₁(14)=1
+Then
+If L₁(3)=1 ou L₁(3)=1
+Then
+6→I
+Else
+If L₂(6)=1 ou L₁(6)=1
+Then
+3→I
+Else
+nbrAléatEnt(1,2)→L₃(3)
+If L₃(3)=1:6→I
+If L₃(3)=2:3→I
+End
+End
+Else
+If L₁(3)=1 et L₁(14)=1
+Then
+11→I
+Else
+If L₁(6)=1 et L₁(11)=1
+Then
+14→I
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+End
+
+If I=0
+Then
+If L₃(1)=0:Goto IB
+L₃(2)+1→I
+If I=17:Goto IB
+End
+Goto IC
+Lbl IC
+If L₁(I)=1:Goto IB
+If L₂(I)=1:Goto IB
+1→L₂(I)
+I→L₃(2)
+L₃(1)+1→L₃(1)
+End
+
+If H=1 et V=1 et L₃(16)≠1
+Then
+nbrAléatEnt(1,16)→I
+If L₁(I)=1:Goto IA
+If L₂(I)=1:Goto IA
+1→L₂(I)
+End
+
+Goto I
+Lbl I
+
+If L₁(1)=1 et L₁(2)=1 et L₁(3)=1:Goto W
+If L₂(1)=1 et L₂(2)=1 et L₂(3)=1:Goto P
+If L₁(3)=1 et L₁(5)=1 et L₁(8)=1:Goto W
+If L₂(3)=1 et L₂(5)=1 et L₂(8)=1:Goto P
+If L₁(12)=1 et L₁(13)=1 et L₁(4)=1:Goto W
+If L₂(12)=1 et L₂(13)=1 et L₂(4)=1:Goto P
+If L₁(12)=1 et L₁(13)=1 et L₁(5)=1:Goto W
+If L₂(12)=1 et L₂(13)=1 et L₂(5)=1:Goto P
+If L₁(6)=1 et L₁(7)=1 et L₁(8)=1:Goto W
+If L₂(6)=1 et L₂(7)=1 et L₂(8)=1:Goto P
+If L₁(1)=1 et L₁(4)=1 et L₁(6)=1:Goto W
+If L₂(1)=1 et L₂(4)=1 et L₂(6)=1:Goto P
+If L₁(15)=1 et L₁(10)=1 et L₁(2)=1:Goto W
+If L₂(15)=1 et L₂(10)=1 et L₂(2)=1:Goto P
+If L₁(15)=1 et L₁(10)=1 et L₁(7)=1:Goto W
+If L₂(15)=1 et L₂(10)=1 et L₂(7)=1:Goto P
+If L₁(9)=1 et L₁(10)=1 et L₁(11)=1:Goto W
+If L₂(9)=1 et L₂(10)=1 et L₂(11)=1:Goto P
+If L₁(14)=1 et L₁(15)=1 et L₁(16)=1:Goto W
+If L₂(14)=1 et L₂(15)=1 et L₂(16)=1:Goto P
+If L₁(9)=1 et L₁(12)=1 et L₁(14)=1:Goto W
+If L₂(9)=1 et L₂(12)=1 et L₂(14)=1:Goto P
+If L₁(11)=1 et L₁(13)=1 et L₁(16)=1:Goto W
+If L₂(11)=1 et L₂(13)=1 et L₂(16)=1:Goto P
+If L₁(1)=1 et L₁(9)=1 et L₁(16)=1:Goto W
+If L₂(1)=1 et L₂(9)=1 et L₂(16)=1:Goto P
+If L₁(8)=1 et L₁(9)=1 et L₁(16)=1:Goto W
+If L₂(8)=1 et L₂(9)=1 et L₂(16)=1:Goto P
+If L₁(3)=1 et L₁(11)=1 et L₁(14)=1:Goto W
+If L₂(3)=1 et L₂(11)=1 et L₂(14)=1:Goto P
+If L₁(6)=1 et L₁(11)=1 et L₁(14)=1:Goto W
+If L₂(6)=1 et L₂(11)=1 et L₂(14)=1:Goto P
+
+If (L₁(1)=1 ou L₂(1)=1) et (L₁(2)=1 ou L₂(3)=1) et (L₁(4)=1 ou L₂(4)=1) et (L₁(5)=1 ou L₂(5)=1) et (L₁(6)=1 ou L₂(6)=1) et (L₁(7)=1 ou L₂(7)=1) et (L₁(8)=1 ou L₂(8)=1) et (L₁(9)=1 ou L₂(9)=1) et (L₁(10)=1 ou L₂(10)=1) et (L₁(11)=1 ou L₂(11)=1) et (L₁(12)=1 ou L₂(12)=1) et (L₁(13)=1 ou L₂(13)=1) et (L₁(14)=1 ou L₂(14)=1) et (L₁(15)=1 ou L₂(15)=1) et (L₁(16)=1 ou L₂(16)=1):Goto E
+Output(5,14,"             "
+Goto 2
+Lbl 3
